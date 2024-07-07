@@ -1,0 +1,21 @@
+
+  @font-face {
+    font-family: 'avenirLightroman';
+    src: url("{{asset('css/Fonts/Avenir/avenir_light-webfont.woff2')}}") format('woff2'),
+         url("{{asset('css/Fonts/Avenir/avenir_light-webfont.woff')}}") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  body{
+    font-family: 'avenirLightroman';
+  }
+
+.img-card{
+    height: 280px;
+}
+
+.fnt{
+    font-size: 20px;
+}
