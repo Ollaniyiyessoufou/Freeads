@@ -76,7 +76,7 @@ class UserController extends Controller
                 // $user->update(['email_verified_at' => Carbon::now()]);
                 $user->email_verified_at = Carbon::now();
                 $user->save();
-                return redirect()->route('home')->with('success', 'Email verified successfuly');
+                return redirect()->route('connect_get')->with('success', 'Email verified successfuly');
             } else {
                 return redirect()->route('verify-mail')->with('fail', 'User not found.');
             }
