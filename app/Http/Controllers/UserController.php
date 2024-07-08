@@ -30,7 +30,7 @@ class UserController extends Controller
             ]);
             //Dispatch the job to send the email
           //  SendVerificationEmail::dispatch($email, $code);
-          Mail::to($this->email)->send(new Verify_Mail($this->code));
+          Mail::to($email)->send(new Verify_Mail($code));
 
             return true;
         } catch (Exception $e) {
