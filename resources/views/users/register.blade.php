@@ -34,7 +34,7 @@
             </div>
         @endif
 
-      <form class="space-y-2" action="/" method="POST">
+      <form class="space-y-2" action="{{ route('register_post') }}" method="POST">
         @csrf
         <div>
           <label for="login" class="block text-sm font-medium leading-6 text-gray-900">Username</label>

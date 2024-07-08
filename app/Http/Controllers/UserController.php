@@ -52,7 +52,6 @@ class UserController extends Controller
             'phone_number' => $request->phone_number,
             'password' => $request->password,
         ]);
-
         session([
             'email' => $request->email,
         ]);
